@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="p-4"  style="background-color:#FFAFAF;">
+      <h5 class="text-white h4">Menu</h5>
+      <span class="text-muted">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/consultoria">Consultoria</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/resultados">Resultados</a>
+        </li>
+      </ul>
+</span>
+</div>
+  </div>
+  <nav class="navbar navbar-dark" style="margin-bottom: 100px; background-color: #FFAFAF;">
+   
+    <div class="container-fluid">
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#FFAFAF;">
+       
+        <span class="navbar-toggler-icon" style="background-color:#ffffff7e;"></span>
+      </button>
+      <div id="contact">
+        <a href="https://www.instagram.com/coachgabsilva/" style="margin-right: 20px;"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:coachgabrielasilva@gmail.com" style="margin-right: 20px;"><i class="bi bi-envelope-at"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=14808894642" style="margin-right: 20px;"><i class="bi bi-whatsapp"></i></a>
+    </div>
+    </div>
+  </nav>
+
+
+
+
+      <h1 style="text-align: center;">Planos & Valores </h1>
+      <p style="text-align: center;">Todos os valores abaixo são em dólar</p>
+
+
+      <div class="plans">
+        <div class="card plan">
+          <h2>Plano Nutricional individual</h2>
+          <p>Plano nutricional montado para você e o seu objetivo dentro de um contexto nutritivo com alimentos que você gosta + consulta por vídeo chamada.</p>
+          <ul>
+            <li>1 plano (duração de 60 dias): $85</li>
+            <li>2 planos (acompanhamento de 3 meses): $150</li>
+            <li>3 planos (acompanhamento de 4 meses): $230</li>
+            <li>Plano nutricional + acompanhamento e atualização semanal: $85 (plano) + $50/semana</li>
+          </ul>
+          <button class="google-form"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekHyzUHuBVe9_9maQ2uay8JBd1-rjlnE3pHu4vAmsGC_PDuQ/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"> Entrar em contato </a></button>
+          <button class="select-plan"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      
+        <div class="card plan">
+          <h2>Contagem de macronutrientes</h2>
+          <p>Para aqueles que não conseguem seguir um plano nutricional e querem fazer uso de aplicativo de contagem de macronutrientes e calorias. 
+            Indicado para pessoas que viajam bastante e que já possuem conhecimentos sobre nutrição.</p>
+          <ul>
+            <li>Uma ligação por vídeo + calorias e macros: $85</li>
+            <li>Plano nutricional + aula de contagem de macros (2 ligações por vídeo): $150</li>
+          </ul>
+          <button class="google-form"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekHyzUHuBVe9_9maQ2uay8JBd1-rjlnE3pHu4vAmsGC_PDuQ/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"> Entrar em contato </a></button>
+          <button class="select-plan"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      
+        <div class="card plan">
+          <h2>Reeducação alimentar</h2>
+          <p>Para aqueles que não possuem objetivo estético específico mas querem melhorar a alimentação e aprender a se alimentar corretamente. Serão enviadas opções de refeições balanceadas, 
+            saudáveis, mas sem quantidades específicas, semanalmente:</p>
+          <ul>
+            <li>$50/semana</li>
+          </ul>
+          <button class="google-form"><a href="https://docs.google.com/forms/d/e/1FAIpQLSekHyzUHuBVe9_9maQ2uay8JBd1-rjlnE3pHu4vAmsGC_PDuQ/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"> Entrar em contato </a></button>
+          <button class="select-plan"> <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+
+<hr>
+
+<footer>
+
+
+
+  <div class="row justify-content-center align-items-center">
+    <a href="http://ismaiana.com" class="text-center text-decoration-none" style="color :hsla(0, 0%, 0%, 0.992); margin-left: auto; font-size: 12px; "> Developed by Ismaiana Lima | © Gabriela Silva 2023 - All Rights Reserved </a>
+  
+    <div id="contact-footer" style="margin-left: auto; margin-right: 15px;">
+      <a href="https://www.instagram.com/coachgabsilva/" style="margin-right: 20px;"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:coachgabrielasilva@gmail.com" style="margin-right: 20px;"><i class="bi bi-envelope-at"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=14808894642" style="margin-right: 20px;"><i class="bi bi-whatsapp"></i></a>
+      <br>
+      <p style="font-size: 9px;">Me siga nas redes sociais</p>
+  </div>
+  
+  </div>
+  
+  </footer>
+
+
+<script>
+
+const plans = document.querySelectorAll('.plan');
+const buttons = document.querySelectorAll('.select-plan');
+
+let currentPlan = 0;
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const currentPlanElement = plans[currentPlan];
+    const nextPlanElement = plans[(index + 1) % plans.length];
+    const direction = index > currentPlan ? 1 : -1;
+    const distance = Math.abs(index - currentPlan) * 100;
+
+    currentPlanElement.style.transform = `translateX(${-direction * distance}%)`;
+    nextPlanElement.style.transform = `translateX(${direction * 100}%)`;
+    nextPlanElement.style.display = 'block';
+
+    setTimeout(() => {
+      currentPlanElement.style.display = 'none';
+      currentPlanElement.style.transform = '';
+      nextPlanElement.style.transform = '';
+      currentPlan = (index + 1) % plans.length;
+    }, 500);
+  });
+});
+
+</script>
+
+<script src="/static/js/main.js"></script>
+
+</body>
+</html>

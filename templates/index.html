@@ -5,8 +5,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriela Silva</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+    
+
 </head>
 <body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4"  style="background-color:#FFAFAF;">
+          <h5 class="text-white h4">Menu</h5>
+          <span class="text-muted">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/consultoria">Consultoria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/resultados">Resultados</a>
+            </li>
+          </ul>
+    </span>
+</div>
+      </div>
+      <nav class="navbar navbar-dark" style="margin-bottom: 100px; background-color: #FFAFAF;">
+       
+        <div class="container-fluid">
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#FFAFAF;">
+           
+            <span class="navbar-toggler-icon" style="background-color:#ffffff7e;"></span>
+          </button>
+          <div id="contact">
+            <a href="https://www.instagram.com/coachgabsilva/" style="margin-right: 20px;"><i class="bi bi-instagram"></i></a>
+            <a href="mailto:coachgabrielasilva@gmail.com" style="margin-right: 20px;"><i class="bi bi-envelope-at"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=14808894642" style="margin-right: 20px;"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        </div>
+      </nav>
+
+
+
+      <div class="homepage-introduction" style="color: rgb(255, 255, 255); text-align: center;">
+
+
+        <h1>Gabriela da Silva - Coach Nutricional Certificada</h1>
+        <h3>Consultoria Nutricional Online</h3> 
+
+      </div>
+
+      <hr>
+
+      <div id="foods"  style=" background-image: url('static/img/background-3.jpg');
+      background-repeat: yes; background-attachment: fixed;  background-size: cover;">
+
+
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.87);">
+
+        <h2 style="text-align: center; color:rgb(0, 0, 0)">Como funciona a consultoria nutricional online</h2>
+
+        <p>
+        <ul style="color:rgb(8, 8, 8);">
+
+          <li>Primeiro você responderá um questionário para que eu possa saber mais sobre você, sua composição corporal, rotina, treinos e sua alimentação atual, 
+          alimentos que gosta e não gosta, estado de saúde atual, etc.</li><br>
+
+          <li>As avaliações físicas são feitas através de FOTOS. As fotos são obrigatórias e não serão compartilhadas com ninguém sem a sua autorização. 
+          Caso o cliente tenha acesso a uma balança de bioimpedância podemos avaliar o % de gordura e massa magra.</li><br>
+
+
+          <li>A chamada de vídeo é feita após o envio do plano nutricional, onde tiramos dúvidas e faremos qualquer alteração no plano. Duração de no máximo 2 horas.</li><br>
+
+          
+          <li>Fico a disposição para qualquer dúvida, ajuda com o plano ou alimentação fora de casa, ideias de refeições e ajuda com a contagem de macros a qualquer momento via WhatsApp.</li><br>
+
+          
+          <li>A atualização (checagem de resultados e mudança do plano) será feita depois de 60 dias, conforme sua vontade de retornar ou não.</li><br>
+
+
+        </ul>
+            </p>
+        <button class="accordion"> O que uma coach nutricional faz?  </button>
+        <div class="panel">
+            <p style="color:rgb(0, 0, 0);">
+              A coach nutricional organiza toda a sua alimentação de forma individualizada, com base em seus objetivos. 
+
+              É construído um plano nutricional customizado com as quantidades de calorias, distribuição dos macronutrientes e micronutrientes, 
+              quantidade de água e fibras individuais e organização das refeições para cada cliente. 
+              
+              A coach nutricional trabalha com educação alimentar, ajuda a fazer melhores escolhas na alimentação e a praticar o equilíbrio, 
+              sem restrições alimentares. A coach nutricional também pode ajudar com ideias de refeições saudáveis e de baixas calorias, receitas, 
+              contagem de macros em aplicativos, dicas de alimentos, lista de mercado e qualquer ajuda que você precisar com a sua dieta. 
+              
+            </p>
+        </div>
     
+  
+    <button class="accordion" >O que a coach nutricional não faz? </button>
+    <div class="panel">
+        <p style="color:rgb(2, 2, 2);">Não trata de doenças, não prescreve medicação,
+            suplementos e vitaminas.
+        </p>
+    </div>
+    </div>
+   
+</div>
+
+    <div id="plans" style="text-align: center; margin-top: 10px; font-size: 22px;">
+      <i class="bi bi-arrow-right-short" style="color: #e47070;"></i> <a href="/consultoria" style="color:#e47070;">Clique aqui para ver planos disponíveis </a> 
+  </div>
+
+<hr>
+
+<h2 style="text-align: center; margin-bottom: 90px;">Clientes </h2>
+
+<div class="image-container">
+    <div class="slider">
+      <div class="slide" style="background-image: url('static/img/results.JPG');"></div>
+      <div class="slide" style="background-image: url('static/img/results.JPG');"></div>
+      <div class="slide" style="background-image: url('static/img/results.JPG');"></div>
+      <div class="slide" style="background-image: url('static/img/results.JPG');"></div>
+      <div class="slide" style="background-image: url('static/img/results.JPG');"></div>
+    </div>
+    <div class="slider-controls">
+        <button class="prev-slide"> <i class="bi bi-chevron-compact-left"></i></button>
+        <button class="next-slide"> <i class="bi bi-chevron-compact-right"></i></button>
+    </div>
+  </div>
+  
+  <hr>
+    
+    <div class="container" style="text-align: center;">
+       <h2>Sobre mim</h2> <br>
+       <img src="static/img/Gabi-intro.JPG" id="aboutme-pic">
+            <span id="aboutme-text">
+            <p>Meu nome é Gabriela, eu tenho 27 anos e sou originalmente de Piracicaba-SP, Brasil. 
+              Moro nos Estados Unidos desde 2018, no estado do Arizona, com meu marido Jacob e meu gatinho idoso chamado Henry. 
+              Sou formada em Biologia no Brasil e aqui nos EUA sou formada e certificada pela NASM (National Academy of Sports Medicine) 
+              para ser Personal Trainer e Nutrition Coach nos Estados Unidos e Online em todo o mundo.
+               
+              Minha vida fitness e paixão por nutrição começou logo na pandemia quando decidi me exercitar em casa e me alimentar melhor, já que não estava mais trabalhando. 
+              Comecei a fazer treinos funcionais todos os dias e a controlar minhas calorias, me alimentando saudável e ingerindo mais proteínas. 
+              Fazia muitas receitinhas que me ajudaram nessa fase. Vi muita mudança no meu corpo e na minha mente e assim comecei a pesquisar muito sobre nutrição e a estudar por conta.
+               Até que decidi me especializar e trabalhar com isso. 
+              Antes disso eu tinha uma autoestima péssima, não gostava do que eu via no espelho, eu comia muito mal…. 
+              Muito fast food, comidas altamente calóricas e que me faziam muito mal porque era em excesso. Minha disposição era afetada por esses hábitos ruins, não tinha 
+              vontade de fazer nada e tinha muito sono e dores de barriga. 
+              
+              Essa mudança de hábitos mudou a minha vida e a minha auto estima e eu quero poder ajudar muitas outras mulheres a alcançar esse mesmo prazer e seus objetivos estéticos.
+              </p>
+        </span>
+            </div>
+  
+<hr> 
+
+<footer>
+
+
+
+  <div class="row justify-content-center align-items-center">
+    <a href="http://ismaiana.com" class="text-center text-decoration-none" style="color :hsla(0, 0%, 0%, 0.992); margin-left: auto; font-size: 12px; "> Developed by Ismaiana Lima | © Gabriela Silva 2023 - All Rights Reserved </a>
+  
+    <div id="contact-footer" style="margin-left: auto; margin-right: 15px;">
+      <a href="https://www.instagram.com/coachgabsilva/" style="margin-right: 20px;"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:coachgabrielasilva@gmail.com" style="margin-right: 20px;"><i class="bi bi-envelope-at"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=14808894642" style="margin-right: 20px;"><i class="bi bi-whatsapp"></i></a>
+      <br>
+      <p style="font-size: 9px;">Me siga nas redes sociais</p>
+  </div>
+  
+  </div>
+  
+  </footer>
+
+
+<script>
+
+    const acc = document.getElementsByClassName("accordion");
+    let i;
+            
+    for (i = 0; i < acc.length; i++) {
+    const panel = acc[i].nextElementSibling;
+    panel.style.display = "none";
+            
+    acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+    } else {
+        panel.style.display = "block";
+            }
+        });
+    }
+
+
+
+   
+</script>
+
+<script src="/static/js/main.js"></script>
+
 </body>
 </html>
