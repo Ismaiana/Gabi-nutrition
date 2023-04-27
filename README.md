@@ -2,10 +2,12 @@
 
 To do 
 
-- [ ] Create database for reviews
-- [ ] Implement server
-- [ ] Implement Front-End 
-- [ ] Styling 
+- [ ] Create admin login
+- [ ] Create backend code for reviews approval/ pictures upload 
+- [ ] Finish styling
+- [ ] Add security features 
+- [ ] Deploy website with AWS
+
 
 
 
