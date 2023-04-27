@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
 
 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -50,11 +54,14 @@
   <nav class="navbar navbar-dark" style="margin-bottom: 100px; background-color: #FFAFAF;">
    
     <div class="container-fluid">
-    
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#FFAFAF;">
-       
+      
         <span class="navbar-toggler-icon" style="background-color:#ffffff7e;"></span>
       </button>
+
+      <div id="brand">Gabriela Silva <i class="fas fa-dumbbell"></i></div>
+
       <div id="contact">
         <a href="https://www.instagram.com/coachgabsilva/" style="margin-right: 20px;"><i class="bi bi-instagram"></i></a>
         <a href="mailto:coachgabrielasilva@gmail.com" style="margin-right: 20px;"><i class="bi bi-envelope-at"></i></a>
@@ -63,29 +70,32 @@
     </div>
   </nav>
 
-  <h2 style="text-align: center;"> Galeria de resultados </h2>
 
-  photos go in here
+  <h2 style="text-align: center; margin-bottom: 50px;"> Galeria de resultados </h2>
+    <div class="photos-clients">
+      <img src="static/img/client8.jpeg" class="photo-clients"/> <br>
+      <img src="static/img/client6.jpeg" class="photo-clients"/> <br>
+      <img src="static/img/client7.jpeg" class="photo-clients"/> <br>
+      <img src="static/img/client2.jpeg" class="photo-clients"/> <br>
+      <img src="static/img/client5.jpeg" class="photo-clients"/> <br>
+      <button id="show-more-btn">Ver mais</button>
+    </div>
 
 
   <hr>
 
-  <h2 style="text-align: center;"> Reviews </h2>
-
-
-  
-
+  <h2 style="text-align: center; margin-bottom: 20px;"> Reviews </h2>
   {% if reviews is defined %}
   {% for review in reviews %}
-    <div class="media">
-      <div class="media-body">
-        <h5 class="mt-0">{{ review.fname }} {{ review.lname }}</h5>
-        <p>{{ review.review }}</p>
-        <hr>
-      </div>
-    </div>
+  <div class="media">
+  <div class="media-body">
+  <h5 class="mt-0" style="font-size: 20px; font-weight: bold;">{{ review.fname }} {{ review.lname }}</h5>
+  <p style="font-size: 16px; margin-bottom: 10px;">{{ review.review }}</p>
+  <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
+  </div>
+  </div>
   {% endfor %}
-{% endif %}
+  {% endif %}
 
 
 
@@ -115,6 +125,32 @@
     
     </footer>
   
+
+
+
+    <script>
+
+const showMoreBtn = document.getElementById('show-more-btn');
+const photosClients = document.querySelector('.photos-clients');
+const photoClients = document.querySelectorAll('.photo-clients');
+const numPhotosToShow = 4;
+
+for (let i = numPhotosToShow; i < photoClients.length; i++) {
+  photoClients[i].classList.add('hidden');
+}
+
+showMoreBtn.addEventListener('click', () => {
+  const numVisiblePhotos = document.querySelectorAll('.photo-clients:not(.hidden)').length;
+
+  for (let i = numVisiblePhotos; i < numVisiblePhotos + numPhotosToShow && i < photoClients.length; i++) {
+    photoClients[i].classList.remove('hidden');
+  }
+ 
+  if (document.querySelectorAll('.photo-clients.hidden').length === 0) {
+    showMoreBtn.classList.add('hidden');
+  }
+});
+    </script>
 
     </body>
 
