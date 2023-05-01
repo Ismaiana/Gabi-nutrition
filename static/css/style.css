@@ -1,5 +1,5 @@
 body {
-  background-image: url('/static/img/background-body.JPG');
+  background-image: url('/static/img/background-body.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;  
@@ -7,7 +7,7 @@ body {
 
 
 .accordion {
-    background-color: rgb(250, 192, 192);
+    background-color: #FFAFAF;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -35,10 +35,14 @@ body {
 
 #aboutme-pic {
 
-    border-radius: 50%;
-    height: auto;
-    width: auto;
-    margin-bottom: 60px;
+  width: 450px;
+  height: 550px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 60%;
+
 }
 
 #aboutme-text {
@@ -49,6 +53,10 @@ body {
     padding: 5px;
     margin: 5px;
     margin-bottom: 60px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 
 }
 
@@ -189,12 +197,33 @@ body {
   }
   
 
-.homepage-introduction {
+#homepage-introduction-title {
 
   color: rgb(9, 10, 10);
-  margin-bottom: 90px;
+  margin-bottom: 390px;
   font-family: 'Pacifico', cursive;
-  font-size: 100px;
+  opacity: 100%;
+  text-align: center;
+  padding-top: 95px;
+  font-size: 50px;
+
+}
+
+
+.homepage-introduction-bg {
+
+   position:absolute;
+   top: 0; 
+   width: 100%; 
+   height: 651px; 
+   z-index: -1; 
+   background-image: url('/static/img/template.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:fixed;
+   opacity: 0.4;
+
+
 }
 
 #contact-footer a {
@@ -281,4 +310,19 @@ margin-right: auto;
 background-color: #ffffff;
 display: flex;
 
+}
+
+#quote {
+
+  font-family: serif;
+  font-size: 1em;
+  display: inline-block;
+  transform: scaleX(1);
+}
+
+#quote2::before {
+ 
+  display: inline-block;
+  font-size: 1em;
+  transform: scaleX(-1);
 }

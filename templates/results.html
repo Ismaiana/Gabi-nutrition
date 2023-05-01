@@ -84,25 +84,28 @@
 
   <hr>
 
-  <h2 style="text-align: center; margin-bottom: 20px;"> Reviews </h2>
+  <h2 style="text-align: center; margin-bottom: 60px; margin-top: 60px;"> Clientes Reviews </h2>
   {% if reviews is defined %}
   {% for review in reviews %}
   <div class="media">
-  <div class="media-body">
-  <h5 class="mt-0" style="font-size: 20px; font-weight: bold;">{{ review.fname }} {{ review.lname }}</h5>
-  <p style="font-size: 16px; margin-bottom: 10px;">{{ review.review }}</p>
+  <div class="media-body" style="margin-left: 8px;">
+  <h6 class="mt-0" style= "font-weight: bold;">{{ review.fname }} {{ review.lname }} <i class="bi bi-check2-circle" style="color:green; font-size: 10px;"></i></h6><br>
+  <p style="font-size: 15px; margin-bottom: 10px;"><i class="bi bi-quote" id="quote"></i> {{ review.review }} <i class="bi bi-quote" id="quote2"></i></p>
   <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
   </div>
   </div>
+  
   {% endfor %}
   {% endif %}
 
 
 
-
-<div id="plans" style="text-align: center; margin-top: 10px; font-size: 22px;">
+  <div id="plans" style="text-align: center; margin-top: 30px; font-size: 22px;">
     <i class="bi bi-arrow-right-short" style="color: #e47070;"></i> <a href="/consultoria" style="color:#e47070;">Clique aqui para ver planos disponíveis </a> 
-</div> 
+  </div> 
+
+
+
 
 <hr>
 
