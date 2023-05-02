@@ -60,6 +60,7 @@ body {
 
 }
 
+
 .plans .plan:not(:first-child) {
     display: none;
   }
@@ -75,7 +76,6 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
   }
@@ -100,7 +100,7 @@ body {
     height: 100vh;
     overflow-x: hidden; 
     margin-top: -60px;
-  }
+}
 
 .google-form {
     position: absolute;

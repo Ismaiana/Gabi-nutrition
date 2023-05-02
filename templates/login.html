@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin</title>
+</head>
+
+<body>
+
+
+<div class="login-page">
+
+ <h2>Welcome!</h2><br> 
+  <h3>Login</h3>
+    <form action="/login" method="POST" class="form-login">
+    <p> 
+     Email<br> <input type="email" name="email" class="form-control" required >
+    </p>
+    <p> 
+     Password <input type="password" name="password" class="form-control" required>
+    </p>    
+    <div class="flash-message">
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+                <strong>{{ message }}</strong>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        </div>
+    <p>
+     <input type="submit" value="Login" style="width: 230px;">
+    </p>
+    <p><a href="/reset_password"> Forgot your password? </a></p>
+    </form>
+</div>
+
+        
+</body>
+</html>

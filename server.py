@@ -1,8 +1,9 @@
 
 from flask import Flask, render_template, redirect, flash, session, url_for, request
 from model import connect_to_db, db
-import os
+from passlib.hash import argon2
 from jinja2 import StrictUndefined
+import os
 import crud
 
 
@@ -70,9 +71,39 @@ def display_reviews():
 
     reviews = crud.get_reviews()
 
-   
 
     return render_template('results.html', reviews=reviews)
+
+@app.route('/login-admin')
+def login():
+    """Display login page"""
+
+    return render_template('login')
+
+
+@app.route('/login', methods=['POST'])
+def login_form():
+    """Process user login"""
+
+    email = request.form.get('email')
+    password = request.form.get('password')
+    
+    user = crud.get_user_by_email(email)
+    
+   
+    if not user or not argon2.verify(password, user.password):
+
+        flash('The email or password you entered was incorrect.')
+
+        return redirect('/login-admin')
+        
+    else:
+
+        session['user_email'] = user.email
+       
+
+        return redirect('/')
+    
 
 
 if __name__ == "__main__":
