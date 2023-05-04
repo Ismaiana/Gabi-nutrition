@@ -1,5 +1,6 @@
 # Gabi Nutrition 🥙
-This website is designed to allow clients to review services, as well as display clients pictures results, and also to contact the nutritional coach for information on meal plans and prices.
+
+This website allows clients to review services, view pictures of results, and contact the nutritional coach for meal plan information and pricing.
 
 
 # To do 
