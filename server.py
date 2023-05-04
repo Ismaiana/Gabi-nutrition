@@ -1,16 +1,19 @@
 
 from flask import Flask, render_template, redirect, flash, session, url_for, request
 from model import connect_to_db, db
+from werkzeug.utils import secure_filename
 from passlib.hash import argon2
 from jinja2 import StrictUndefined
 import os
 import crud
+import uuid
 
 
 app = Flask(__name__)
 
 app.jinja_env.undefined = StrictUndefined
 app.secret_key = os.environ["secret_key"]
+app.config['UPLOAD_FOLDER'] = 'static/img'
 connect_to_db(app)
 
 
@@ -27,7 +30,6 @@ def consultoria():
     """Display programs' page"""
 
     return render_template("consultoria.html")
-
 
 
 
@@ -64,21 +66,26 @@ def create_review():
 
     return redirect("/thank_you")
 
+
 @app.route('/resultados')
 def display_reviews():
-    """Display reports forum"""
+    """Display photos and reviews"""
 
 
     reviews = crud.get_reviews()
 
+    photos = crud.get_all_photos()
 
-    return render_template('results.html', reviews=reviews)
+    flash('Welcome Admin!')
+
+    return render_template('results.html', reviews=reviews, photos=photos)
+
 
 @app.route('/login-admin')
 def login():
     """Display login page"""
 
-    return render_template('login')
+    return render_template('login.html')
 
 
 @app.route('/login', methods=['POST'])
@@ -91,7 +98,7 @@ def login_form():
     user = crud.get_user_by_email(email)
     
    
-    if not user or not argon2.verify(password, user.password):
+    if not user or password != password:
 
         flash('The email or password you entered was incorrect.')
 
@@ -101,10 +108,52 @@ def login_form():
 
         session['user_email'] = user.email
        
-
-        return redirect('/')
     
 
+        return redirect('/resultados')
+    
+
+@app.route('/delete_review')
+def delete_review():
+    """Button to delete review"""
+
+    user_email = session['user_email']
+
+    review = crud.get_review_by_email(user_email)
+
+    delete_button = request.args.get('review-delete')
+    
+    remove_review = crud.get_review_by_id(review.review_id)
+
+    db.session.delete(remove_review)
+    db.session.commit()
+
+    return redirect('/resultados') #fix this function
+
+
+
+@app.route('/upload-photo', methods=['POST'])
+def new_photo():
+    """Upload new photo"""
+
+    email = session['user_email']
+    user = crud.get_user_by_email(email)
+
+    file = request.files['file']
+    filename = secure_filename(file.filename)
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+    upload_photo = crud.upload_photo(user.user_id, filename)
+    db.session.add(upload_photo)
+    db.session.commit()
+
+    return redirect('/resultados')
+
+   
+
+
+    
+    
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)

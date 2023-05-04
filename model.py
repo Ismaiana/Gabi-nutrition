@@ -19,6 +19,18 @@ class User(db.Model):
         return f'<Reviews review_id={self.user_id} user_email={self.email} password={self.password}>'
 
 
+class Photos(db.Model):
+    """Clientes photos"""
+
+    __tablename__ = "photos"
+
+    photo_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), nullable=False)
+    filename = db.Column(db.String, nullable=False)
+
+    def __repr__(self):
+        return f'<Photo photo_id={self.photo_id} user_id={self.user_id} filename={self.filename}>'
+    
 
 class Reviews(db.Model):
     """Reviews for reviews page"""
@@ -29,10 +41,12 @@ class Reviews(db.Model):
     user_email = db.Column(db.String, unique=True)
     fname = db.Column(db.String(20), nullable=False)
     lname = db.Column(db.String(20), nullable=False)
-    review = db.Column (db.String(350))
+    review = db.Column (db.String(450))
 
     def __repr__(self):
         return f'<Reviews review_id={self.review_id} user_email={self.user_email} fname={self.fname} lname={self.lname} review={self.review}>'
+
+
 
 def connect_to_db(flask_app, db_uri="postgresql:///reviews", echo=False):
     flask_app.config["SQLALCHEMY_DATABASE_URI"] = db_uri

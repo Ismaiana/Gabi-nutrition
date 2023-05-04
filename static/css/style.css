@@ -277,7 +277,6 @@ hr {
 
 .photo-clients {
 
-  
   width: 550px;
   height: 550px;
   display: flex;
@@ -304,7 +303,6 @@ hr {
 
 #show-more-btn {
 
- 
 margin-left: auto;
 margin-right: auto;
 background-color: #ffffff;
@@ -326,3 +324,13 @@ display: flex;
   font-size: 1em;
   transform: scaleX(-1);
 }
+
+#photo-upload {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+  
