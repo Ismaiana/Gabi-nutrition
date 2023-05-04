@@ -3,7 +3,7 @@
 To do 
 
 - [x] Create admin login
-- [ ] Create backend code for reviews approval/ pictures upload 
+- [x] Create backend code for reviews approval/ pictures upload 
 - [ ] Finish styling
 - [ ] Add security features 
 - [ ] Deploy website with AWS
