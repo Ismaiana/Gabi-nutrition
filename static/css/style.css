@@ -1375,3 +1375,346 @@ display: flex;
 
 
 }
+
+
+
+
+
+
+
+
+
+/* When screen change from portrait to lanscape - phones */
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+
+  .accordion {
+    background-color: #FFAFAF;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.4s;
+    border-top: 1em solid rgb(10, 10, 10);
+    border-bottom: 1em solid rgb(7, 7, 7);
+    border-left: 1em solid rgb(10, 10, 10);
+    border-right: 1em solid rgb(5, 5, 5);
+    border-radius: 14px;
+    margin-bottom: 30px;
+      }
+
+.accordion:hover {
+
+  background-color: rgb(251, 255, 226);
+  color:black;
+
+}
+
+#aboutme-pic {
+
+  width: 450px;
+  height: 550px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 60%;
+
+}
+
+#aboutme-text {
+
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+
+
+.plans .plan:not(:first-child) {
+    display: none;
+  }
+
+
+.card.plan {
+    position: relative;
+    width: 350px;
+    height: 550px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+
+.select-plan {
+    position: absolute;
+    left: calc(50% + 270px);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+
+  
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden; 
+    margin-top: -60px;
+}
+
+.google-form {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: rgb(255, 255, 255);
+    
+  
+  }
+
+.google-form a {
+
+    color: #e47070;
+   
+  }
+
+#bibi {
+
+    color: #e47070;
+  }
+
+#contact a {
+
+    color: aliceblue;
+}
+
+#contact a :hover{
+
+  color: #e47070;
+}
+
+.image-container {
+    width: 750px;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+.slider {
+    display: flex;
+    height: 100%;
+    width: calc(100% * 5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+    
+
+  }
+  
+.slide {
+    width: calc(100% / 5);
+    height: 88%;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+.slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+.slider-controls button {
+    background-color: transparent;
+    border: none;
+    color: #111010;
+    font-size: 2em;
+    padding: 0 10px;
+  }
+  
+.slider-controls button:focus {
+    outline: none;
+  }
+  
+.prev-slide {
+    float: left;
+  }
+  
+.next-slide {
+    float: right;
+  }
+  
+
+#homepage-introduction-title {
+
+  color: rgb(9, 10, 10);
+  margin-bottom: 390px;
+  font-family: 'Pacifico', cursive;
+  opacity: 100%;
+  text-align: center;
+  padding-top: 95px;
+  font-size: 50px;
+
+}
+
+
+.homepage-introduction-bg {
+
+   position:absolute;
+   top: 0; 
+   width: 100%; 
+   height: 651px; 
+   z-index: -1; 
+   background-image: url('/static/img/template.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:fixed;
+   opacity: 0.4;
+
+
+}
+
+#contact-footer a {
+
+  color: rgb(248, 121, 121); 
+}
+
+#contact-footer a :hover { 
+
+  color: rgb(15, 15, 15); 
+}
+
+.review-form {
+
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  background-color: #ffffff65;
+  margin-left: 500px;
+  margin-right: 500px;
+
+
+}
+
+#send_review {
+ 
+  margin-bottom: 30px; 
+  background-color: rgb(255, 255, 255);
+
+
+}
+
+#send_review:hover {
+
+  font-size: 17px;
+  background-color: rgb(230, 188, 219);
+}
+
+footer {
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+
+
+hr {
+
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.photo-clients {
+
+  width: 550px;
+  height: 550px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.hidden {
+  display: none;
+}
+
+#brand {
+  background: rgb(255, 255, 255);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  
+}
+
+
+#show-more-btn {
+
+margin-left: auto;
+margin-right: auto;
+background-color: #ffffff;
+display: flex;
+
+}
+
+#quote {
+
+  font-family: serif;
+  font-size: 1em;
+  display: inline-block;
+  transform: scaleX(1);
+}
+
+#quote2::before {
+ 
+  display: inline-block;
+  font-size: 1em;
+  transform: scaleX(-1);
+}
+
+#photo-upload {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+
+  
+}
