@@ -1,4 +1,4 @@
-# Gabi Nutrition ![alt text](https://github.com/Ismaiana/Happy-Snacky-Project/blob/main/static/img/brand.JPG "brand")
+# Gabi Nutrition ![alt text]([https://github.com/Ismaiana/Happy-Snacky-Project/blob/main/static/img/brand.JPG] "brand")
 
 This website allows clients to review services, view pictures of results, and contact the nutritional coach for meal plan information and pricing.
 
