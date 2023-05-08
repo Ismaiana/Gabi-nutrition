@@ -72,16 +72,15 @@
 
  
   <div class="form-container">
-    {% if session['user_email'] %}
-    <form action="/upload-photo" method="post" enctype="multipart/form-data">
-      <div id="upload-photo">
-        <input type="file" name="file" style="margin-bottom: 5px;"><br>
-        <input type="submit" value="Upload">
-      </div>
-    </form>
-    {% else %}
+    {% if session.get('user_email') %}
+      <form action="/upload-photo" method="post" enctype="multipart/form-data">
+        <div id="upload-photo">
+          <input type="file" name="file" style="margin-bottom: 5px;"><br>
+          <input type="submit" value="Upload">
+        </div>
+      </form>
     {% endif %}
-  </div>
+    </div>
 
 
   <h2 style="text-align: center; margin-bottom: 50px;"> Galeria de resultados </h2>
