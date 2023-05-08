@@ -117,18 +117,20 @@ def login_form():
 def delete_review():
     """Button to delete review"""
 
-    user_email = session['user_email']
 
-    review = crud.get_review_by_email(user_email)
+    email = session['user_email']
 
-    delete_button = request.args.get('review-delete')
-    
-    remove_review = crud.get_review_by_id(review.review_id)
+    review = crud.get_review_by_email(email)
 
-    db.session.delete(remove_review)
-    db.session.commit()
+    button_delete = request.args.get('delete_review')
+       
+    remove_review = crud.get_review_by_id(review.review_id, button_delete)
 
-    return redirect('/resultados') #fix this function
+    if remove_review:
+        db.session.delete(remove_review)
+        db.session.commit()
+
+    return redirect('/resultados') 
 
 
 
@@ -148,6 +150,12 @@ def new_photo():
     db.session.commit()
 
     return redirect('/resultados')
+
+# #@app.route('/delete-photo')
+# def delete_photo():
+#     """Delete photo"""
+
+
 
    
 

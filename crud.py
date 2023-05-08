@@ -15,10 +15,10 @@ def get_reviews():
     return Reviews.query.all()
 
 
-def get_review_by_id(review_id):
+def get_review_by_id(review_id, review):
     
 
-    return Reviews.query.get(review_id)
+    return Reviews.query.filter_by(review_id = review_id, review=review).first()
 
 
 def get_review_by_email(user_email):

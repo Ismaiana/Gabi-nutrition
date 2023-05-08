@@ -71,24 +71,34 @@
   </nav>
 
  
-  <div class="form-container">
-    {% if session.get('user_email') %}
-      <form action="/upload-photo" method="post" enctype="multipart/form-data">
-        <div id="upload-photo">
-          <input type="file" name="file" style="margin-bottom: 5px;"><br>
-          <input type="submit" value="Upload">
-        </div>
-      </form>
-    {% endif %}
-    </div>
+ 
 
 
   <h2 style="text-align: center; margin-bottom: 50px;"> Galeria de resultados </h2>
+
+  <div class="form-container">
+    {% if session.get('user_email') %}
+            <h3 style="text-align: center;">WELCOME ADMIN!</h3><br>
+      <form action="/upload-photo" method="post" enctype="multipart/form-data">
+        <div id="photo-upload">
+          <input type="file" name="file"><br>
+          <button type="submit">Upload</button>
+        </div>
+      </form>
+    {% endif %}
+  </div>
+
     <div class="photos-clients">
 
       {% if photos is defined %}
       {% for photo in photos [::-1] %}
       <img src="static/img/{{photo.filename}}" value="{{photo.filename}}" class="photo-clients"/><br>
+      {% if session.get('user_email') %}
+      <form action="/delete-photo" method="post">
+        <input type="hidden" name="filename" value="{{photo.filename}}">
+        <button type="submit" name="delete-photo" class="btn btn-danger btn-sm" style="display: flex; align-items: center; margin-left: auto; margin-right: auto;"> Delete </button><br>
+      </form>
+      {% endif %}
       {% endfor %}
       {% endif %}
       <img src="static/img/client8.jpeg" class="photo-clients"/> <br>
@@ -104,11 +114,17 @@
 
   <h2 style="text-align: center; margin-bottom: 60px; margin-top: 60px;"> Clientes Reviews </h2>
   {% if reviews is defined %}
-  {% for review in reviews %}
+  {% for review in reviews [::-1] %}
   <div class="media">
   <div class="media-body" style="margin-left: 8px;">
   <h6 class="mt-0" style= "font-weight: bold;">{{ review.fname }} {{ review.lname }} <i class="bi bi-check2-circle" style="color:green; font-size: 10px;"></i></h6><br>
   <p style="font-size: 15px; margin-bottom: 10px;"><i class="bi bi-quote" id="quote"></i> {{ review.review }} <i class="bi bi-quote" id="quote2"></i></p>
+  {% if session.get('user_email') %}
+  <form action="/delete_review">
+    <input type="hidden" name="review_delete" value="{{ review.review_id }}">
+    <button type="submit" name="delete_review" class="btn btn-danger btn-sm">Delete</button>
+  </form>
+  {% endif %}
   <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
   </div>
   </div>
