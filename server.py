@@ -113,27 +113,6 @@ def login_form():
         return redirect('/resultados')
     
 
-@app.route('/delete_review')
-def delete_review():
-    """Button to delete review"""
-
-
-    email = session['user_email']
-
-    review = crud.get_review_by_email(email)
-
-    button_delete = request.args.get('delete_review')
-       
-    remove_review = crud.get_review_by_id(review.review_id, button_delete)
-
-    if remove_review:
-        db.session.delete(remove_review)
-        db.session.commit()
-
-    return redirect('/resultados') 
-
-
-
 @app.route('/upload-photo', methods=['POST'])
 def new_photo():
     """Upload new photo"""
@@ -151,9 +130,37 @@ def new_photo():
 
     return redirect('/resultados')
 
-# #@app.route('/delete-photo')
-# def delete_photo():
-#     """Delete photo"""
+
+@app.route('/delete_review')
+def delete_review():
+    """Button to delete review"""
+
+
+
+    button_delete = request.args.get('delete_review')
+        
+    remove_review = crud.get_review_by_id(button_delete)
+  
+
+    if remove_review:
+        db.session.delete(remove_review)
+        db.session.commit()
+
+    return redirect('/resultados') 
+
+@app.route('/delete-photo')
+def delete_photo():
+    """Delete photo"""
+
+    button_delete_pic = request.args.get('delete-photo')
+
+    remove_photo = crud.get_photo(button_delete_pic)
+
+    if remove_photo:
+        db.session.delete(remove_photo)
+        db.session.commit()
+    
+    return redirect('/resultados') 
 
 
 

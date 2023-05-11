@@ -94,9 +94,9 @@
       {% for photo in photos [::-1] %}
       <img src="static/img/{{photo.filename}}" value="{{photo.filename}}" class="photo-clients"/><br>
       {% if session.get('user_email') %}
-      <form action="/delete-photo" method="post">
-        <input type="hidden" name="filename" value="{{photo.filename}}">
-        <button type="submit" name="delete-photo" class="btn btn-danger btn-sm" style="display: flex; align-items: center; margin-left: auto; margin-right: auto;"> Delete </button><br>
+      <form action="/delete-photo">
+        <input type="hidden" name="filename">
+        <button type="submit" name="delete-photo" class="btn btn-danger btn-sm" value="{{photo.filename}}" style="display: flex; align-items: center; margin-left: auto; margin-right: auto;" onclick="return confirm('Are you sure you want to delete this')"> Delete </button><br>
       </form>
       {% endif %}
       {% endfor %}
@@ -121,8 +121,8 @@
   <p style="font-size: 15px; margin-bottom: 10px;"><i class="bi bi-quote" id="quote"></i> {{ review.review }} <i class="bi bi-quote" id="quote2"></i></p>
   {% if session.get('user_email') %}
   <form action="/delete_review">
-    <input type="hidden" name="review_delete" value="{{ review.review_id }}">
-    <button type="submit" name="delete_review" class="btn btn-danger btn-sm">Delete</button>
+    <input type="hidden" name="review_delete">
+    <button type="submit" name="delete_review"  class="btn btn-danger btn-sm" value="{{ review.review_id }}" onclick="return confirm('Are you sure you want to delete this')">Delete</button>
   </form>
   {% endif %}
   <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
@@ -132,7 +132,7 @@
   {% endfor %}
   {% endif %}
 
-
+  
 
   <div id="plans" style="text-align: center; margin-top: 30px; font-size: 22px;">
     <i class="bi bi-arrow-right-short" style="color: #e47070;"></i> <a href="/consultoria" style="color:#e47070;">Clique aqui para ver planos disponíveis </a> 

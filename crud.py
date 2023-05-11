@@ -15,10 +15,10 @@ def get_reviews():
     return Reviews.query.all()
 
 
-def get_review_by_id(review_id, review):
+def get_review_by_id(review_id):
     
 
-    return Reviews.query.filter_by(review_id = review_id, review=review).first()
+    return Reviews.query.filter_by(review_id = review_id).first()
 
 
 def get_review_by_email(user_email):
@@ -41,6 +41,11 @@ def upload_photo(user_id, filename):
 def get_all_photos():
 
     return Photos.query.all()
+
+
+def get_photo(filename):
+
+    return Photos.query.filter_by(filename=filename).first()
 
 
 

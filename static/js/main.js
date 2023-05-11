@@ -32,6 +32,17 @@ prevSlideBtn.addEventListener('click', prevSlide);
 setInterval(nextSlide, 5000);
 
 
+// Confirm delete
 
+function confirmDelete() {
+    
+  const confirmed = confirm("Are you sure you want to delete this?");
+  if (confirmed) {
+      return true;
+  }
+   else {
+      return false;
+  };
+};
 
 
