@@ -1,7 +1,8 @@
-# Gabi Nutrition 🥙
+# ![alt text](https://github.com/Ismaiana/Gabi-nutrition/blob/main/static/img/brand.JPG "brand") Gabi Nutrition 🥗
 
 This website allows clients to review services, view pictures of results, and contact the nutritional coach for meal plan information and pricing.
 
+# ![alt text](https://github.com/Ismaiana/Gabi-nutrition/blob/main/static/img/website.JPG "website")
 
 # To do 
 
