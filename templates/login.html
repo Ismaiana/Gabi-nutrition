@@ -12,42 +12,63 @@
   <style>
 
 body {
-        background-image: url('/static/img/pink-background.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;  
-        }
+  background-image: url('/static/img/pink-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
+ }
 
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-page {
+
+  border: solid 1px black;
+  text-align: center;
+  padding:20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.192);
+}
 
   </style>
 
-<div class="login-page">
 
- <h2>Welcome!</h2><br> 
-  <h3>Login</h3>
-    <form action="/login" method="POST" class="form-login">
-    <p> 
-     Email<br> <input type="email" name="email" class="form-control" required >
-    </p>
-    <p> 
-     Password<br> <input type="password" name="password" class="form-control" required>
-    </p>    
-    <div class="flash-message">
-        {% with messages = get_flashed_messages() %}
-          {% if messages %}
-            {% for message in messages %}
-                <strong>{{ message }}</strong>
-            {% endfor %}
-          {% endif %}
-        {% endwith %}
-        </div>
-    <p>
-     <input type="submit" value="Login" style="width: 230px;">
-    </p>
-    <p><a href="/reset_password"> Forgot your password? </a></p>
-    </form>
+
+<div class="page-container">
+  <div class="relative flex justify-center items-center h-screen">
+    <div class="sm:flex sm:justify-center sm:items-center">
+      <div class="login-page">
+        <h2>Welcome to your website portal!</h2><br> 
+        <h3>Login</h3>
+        <form action="/login" method="POST" class="form-login">
+          <p> 
+            Email<br> <input type="email" name="email" class="form-control" required >
+          </p>
+          <p> 
+            Password<br> <input type="password" name="password" class="form-control" required>
+          </p>    
+          <div class="flash-message">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                {% for message in messages %}
+                  <strong>{{ message }}</strong>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+          </div>
+          <p>
+            <input type="submit" value="Login" style="background-color:white">
+          </p>
+          <p><a href="/reset_password"> Forgot your password? </a></p>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
-
         
 </body>
 </html>

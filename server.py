@@ -76,7 +76,6 @@ def display_reviews():
 
     photos = crud.get_all_photos()
 
-    flash('Welcome Admin!')
 
     return render_template('results.html', reviews=reviews, photos=photos)
 
@@ -111,6 +110,22 @@ def login_form():
     
 
         return redirect('/resultados')
+    
+
+
+@app.route('/logout', methods=['GET','POST'])
+def process_logout():
+    """Log out user in session"""
+
+    request.form.get('logout')
+
+    session['user_email']
+
+    session.pop('user_email', None)
+    flash('Logged out.')
+    
+    return redirect('/login-admin')
+
     
 
 @app.route('/upload-photo', methods=['POST'])
