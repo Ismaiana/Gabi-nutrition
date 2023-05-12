@@ -47,6 +47,24 @@ def get_photo(filename):
 
     return Photos.query.filter_by(filename=filename).first()
 
+def create_user(email, password):
+
+    user = User(email=email, password=password)
+
+    return user
+
+def get_user_by_email(email):
+   
+
+    return User.query.filter(User.email == email).first()
+
+def reset_password(user, new_password):
+
+    user_password = User.query.filter_by(user_id=user).first()
+
+    user_password.password = new_password
+
+    return user_password
 
 
 if __name__ == '__main__':
