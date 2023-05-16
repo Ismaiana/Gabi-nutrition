@@ -3,3 +3,4 @@ secret.sh
 __pycache__
 tmp
 reviews.sql
+nginx.conf
