@@ -1,3 +1,5 @@
 env
 secret.sh
 __pycache__
+tmp
+reviews.sql

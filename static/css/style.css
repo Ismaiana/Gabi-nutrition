@@ -363,12 +363,6 @@ display: flex;
 
 
 
-
-
-
-
-
-
 @media only screen and (max-width: 600px){
   
   .accordion {
@@ -777,7 +771,7 @@ display: flex;
 #aboutme-pic {
 
   width: 350px;
-  height: 480px;
+  height: 450px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -852,6 +846,7 @@ display: flex;
     margin-left: 60px;
     margin-right: 60px;
     background-color: rgb(255, 255, 255);
+    border: solid black 1.5px;
     
   
   }
@@ -880,7 +875,7 @@ display: flex;
 .image-container {
 
     width: 380px;
-    height: 400px;
+    height: 500px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -888,6 +883,9 @@ display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -40px;
+    margin-bottom: 45px;
+    
    
   }
   
@@ -917,6 +915,7 @@ display: flex;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: -35px;
+   
   }
   
 .slider-controls button {
@@ -925,6 +924,7 @@ display: flex;
     color: #111010;
     font-size: 2em;
     padding: 0 10px;
+    margin-top: 90px;
  
   }
   
@@ -1110,7 +1110,7 @@ display: flex;
     border: none;
     text-align: center;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     transition: 0.4s;
     border-top: 1em solid rgb(10, 10, 10);
@@ -1131,7 +1131,7 @@ display: flex;
 #aboutme-pic {
 
   width: 450px;
-  height: 550px;
+  height: 600px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -1192,9 +1192,8 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow-x: hidden; 
-    margin-top: -60px;
+    height: 150vh;
+    margin-top: 160px;
 }
 
 .google-form {
@@ -1295,12 +1294,25 @@ display: flex;
 #homepage-introduction-title {
 
   color: rgb(9, 10, 10);
-  margin-bottom: 390px;
+  margin-bottom: 1px;
   font-family: 'Pacifico', cursive;
   opacity: 100%;
   text-align: center;
   padding-top: 95px;
   font-size: 50px;
+
+}
+
+
+#homepage-introduction-subtitle {
+
+  color: rgb(9, 10, 10);
+  margin-bottom: 250px;
+  font-family: 'Pacifico', cursive;
+  opacity: 100%;
+  text-align: center;
+  padding-top: 95px;
+  font-size: 30px;
 
 }
 
@@ -1372,8 +1384,8 @@ hr {
 
 .photo-clients {
 
-  width: 380px;
-  height: 380px;
+  width: 580px;
+  height: 580px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
