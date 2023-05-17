@@ -1,7 +1,13 @@
 body {
  background-color: rgb(245, 245, 231);
  overflow-x:hidden;
+
   }
+
+
+  html, body {
+    overflow-x:hidden 
+  } 
 
 
 .accordion {
@@ -672,6 +678,7 @@ display: flex;
      border: none;
      border-top: 1px solid #ccc;
      margin: 20px 0;
+     overflow-x: hidden; 
    }
    
    .photo-clients {
@@ -1064,6 +1071,7 @@ hr {
   border: none;
   border-top: 1px solid #ccc;
   margin: 20px 0;
+  overflow-x: hidden; 
 }
 
 .photo-clients {
@@ -1424,6 +1432,7 @@ hr {
   border: none;
   border-top: 1px solid #ccc;
   margin: 20px 0;
+  overflow-x: hidden; 
 }
 
 .photo-clients {
@@ -2943,6 +2952,7 @@ display: flex;
     body {
   
       overflow-x:hidden;
+
        }
 
     .accordion {
@@ -3227,6 +3237,7 @@ display: flex;
     border: none;
     border-top: 1px solid #ccc;
     margin: 20px 0;
+    overflow-x: hidden;
   }
   
   .photo-clients {
