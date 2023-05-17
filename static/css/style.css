@@ -1,13 +1,8 @@
 body {
  background-color: rgb(245, 245, 231);
- overflow:auto;
+ overflow-x:hidden;
   }
 
-nav {
-
-  overflow:hidden;
-
-}
 
 .accordion {
     background-color: #FFAFAF;
@@ -379,7 +374,8 @@ display: flex;
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px)  and (orientation: landscape) {
 
 
-
+ 
+   
    
    .accordion {
        background-color: #FFAFAF;
@@ -749,6 +745,11 @@ display: flex;
 
 
 @media only screen and (max-width: 600px){
+
+  body {
+  
+    overflow-x:hidden;
+     }
   
   .accordion {
     background-color: #FFAFAF;
@@ -1131,6 +1132,10 @@ display: flex;
 
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
+  body {
+  
+    overflow-x:hidden;
+     }
 
   .accordion {
     background-color: #FFAFAF;
@@ -1854,6 +1859,11 @@ display: flex;
 @media only screen and (min-width: 900px) and (max-width: 1366px) and (orientation: portrait) {
 
 
+  body {
+  
+    overflow-x:hidden;
+     }
+
   .accordion {
     background-color: #FFAFAF;
     color: white;
@@ -2207,7 +2217,10 @@ display: flex;
 
  /*iPhone SE */
 @media only screen and (max-width: 375px) {
-
+  body {
+  
+    overflow-x:hidden;
+     }
 
   .accordion {
     background-color: #FFAFAF;
@@ -2569,7 +2582,10 @@ display: flex;
   /* iPad mini portrait */
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
  
-    
+    body {
+  
+      overflow-x:hidden;
+       }
 
 
 .accordion {
@@ -2924,7 +2940,10 @@ display: flex;
 
   @media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: portrait) {
 
-
+    body {
+  
+      overflow-x:hidden;
+       }
 
     .accordion {
       background-color: #FFAFAF;
