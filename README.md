@@ -16,7 +16,7 @@ This website allows clients to review services, view pictures of results, and co
 ## <a name="technologies"></a>Technologies
 
 
-Backend: Python, PostgreSQL Flask.
+Backend: Python, PostgreSQL, Flask.
 
 Frontend: Javascript, HTML5, CSS, Bootstrap.
 
