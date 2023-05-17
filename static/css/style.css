@@ -1,6 +1,13 @@
 body {
  background-color: rgb(245, 245, 231);
+ overflow:auto;
   }
+
+nav {
+
+  overflow:hidden;
+
+}
 
 .accordion {
     background-color: #FFAFAF;
@@ -44,6 +51,7 @@ li {
   margin-right: auto;
   margin-bottom: 30px;
   border-radius: 60%;
+  overflow:hidden;
 
 }
 
@@ -60,6 +68,7 @@ li {
     margin-right: auto;
     display: flex;
     font-size: 20px;
+    overflow:hidden;
 
 }
 
@@ -3832,7 +3841,7 @@ display: flex;
   #homepage-introduction-subtitle {
   
     color: rgb(9, 10, 10);
-    margin-bottom: 1px;
+    margin-bottom: 160px;
     font-family: 'Pacifico', cursive;
     opacity: 100%;
     text-align: center;
