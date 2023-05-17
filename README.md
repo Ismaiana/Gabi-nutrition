@@ -3,9 +3,11 @@
 This website allows clients to review services, view pictures of results, and contact the nutritional coach for meal plan information and pricing. Admin access allow user to upload new pictures and delete reviews and pictures. You can access this website at www.gbsilva.com
 
 
+# ![alt text](https://github.com/Ismaiana/Gabi-nutrition/blob/main/static/img/website.JPG "website")
+
+
 ## Contents
 * [Tech Stack](#technologies)
-
 * [License](#license)
 * [About Me](#aboutme)
 
@@ -24,16 +26,6 @@ Authentication and Security: Secrets, Passlib.
 
 Deployment: AWS, nginx.
 
-
-
-## 
-
-
-Homepage:
-
-
-
-# ![alt text](https://github.com/Ismaiana/Gabi-nutrition/blob/main/static/img/website.JPG "website")
 
 
 
