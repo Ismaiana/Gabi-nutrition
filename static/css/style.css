@@ -3057,6 +3057,19 @@ display: flex;
     font-size: 50px;
   
   }
+
+
+  #homepage-introduction-subtitle {
+  
+    color: rgb(9, 10, 10);
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+    opacity: 100%;
+    text-align: center;
+    padding-top: 95px;
+    font-size: 20px;
+  
+  }
   
   
   .homepage-introduction-bg {
