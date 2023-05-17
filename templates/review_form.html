@@ -32,7 +32,7 @@
 
 <style>
 
-    body {
+body {
         background-image: url('/static/img/pink-background.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -40,39 +40,42 @@
         }
 
 
+
+
+
+
 </style>
 
-    <div class="review-form" style="margin-top: 60px;">
-        <div class="container">
-          <h1 style="text-align: center; margin-top: 30px;">Me avalie</h1>
-          <br>
-          <div class="col-md-6" style="margin-left: auto; margin-right: auto;">
-            <div class="row justify-content-center">
-              <form action="/review_me" method="POST">
-                <p>
-                  Insira seu email, nome, sobrenome, review e clique em enviar. Obrigada! <i class="bi bi-balloon-heart"></i><br> 
-                </p>
-                <p> 
-                  Email <input type="email" id="email" name="email_db" class="form-control" required>
-                </p>
-                <p> 
-                  Nome <input type="text" id="name" name="fname_db" class="form-control" required>
-                </p>
-                <p> 
-                  Sobrenome <input type="text" id="lname_db" name="lname_db" class="form-control" required>
-                </p>
-                <div class="form-group">
-                  <label for="comment">Escreva seu review:</label>
-                  <textarea class="form-control" id="review_text" rows="3" name="review-text" required></textarea>
-                </div>
-                <button type="submit" class="main-button" id="send_review" name="send-review">Enviar</button>
-                <br>
-              </form>
-            </div>
+<div class="review-form" style="margin-top: 60px;">
+  <div class="container">
+    <h1 style="text-align: center; margin-top: 60px;">Me avalie</h1>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form action="/review_me" method="POST">
+          <p>
+            Insira seu email, nome, sobrenome, review e clique em enviar. Obrigada! <i class="bi bi-balloon-heart"></i><br> 
+          </p>
+          <p> 
+            Email <input type="email" id="email" name="email_db" class="form-control" required>
+          </p>
+          <p> 
+            Nome <input type="text" id="name" name="fname_db" class="form-control" required>
+          </p>
+          <p> 
+            Sobrenome <input type="text" id="lname_db" name="lname_db" class="form-control" required>
+          </p>
+          <div class="form-group">
+            <label for="comment">Escreva seu review:</label>
+            <textarea class="form-control" id="review_text" rows="3" name="review-text" required></textarea>
           </div>
-        </div>
+          <button type="submit" class="main-button" id="send_review" name="send-review">Enviar</button>
+          <br>
+        </form>
       </div>
- 
+    </div>
+  </div>
+</div>
       
       
       

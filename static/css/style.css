@@ -254,10 +254,16 @@ li {
 
 .review-form {
 
-  border: 1px solid rgba(0, 0, 0, 0.486);
-  background-color: #ffffff65;
-  margin-left: 500px;
-  margin-right: 500px;
+
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 
 
 }
@@ -618,10 +624,16 @@ display: flex;
    
    .review-form {
    
-     border: 1px solid rgba(0, 0, 0, 0.486);
-     background-color: #ffffff65;
-     margin-left: 500px;
-     margin-right: 500px;
+  
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
    
    
    }
@@ -999,10 +1011,16 @@ li{
 
 .review-form {
 
-  border: 1px solid rgba(0, 0, 0, 0.486);
-  background-color: #ffffff65;
-  margin-left: 500px;
-  margin-right: 500px;
+ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 
 
 }
@@ -1353,11 +1371,15 @@ display: flex;
 
 .review-form {
 
-  border: 1px solid rgba(0, 0, 0, 0.486);
-  background-color: #ffffff65;
-  margin-left: 500px;
-  margin-right: 500px;
 
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
 }
 
@@ -1709,10 +1731,16 @@ display: flex;
 
 .review-form {
 
-  border: 1px solid rgba(0, 0, 0, 0.486);
-  background-color: #ffffff65;
-  margin-left: 500px;
-  margin-right: 500px;
+  
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 
 
 }
@@ -2058,10 +2086,15 @@ display: flex;
 
 .review-form {
 
-  border: 1px solid rgba(0, 0, 0, 0.486);
-  background-color: #ffffff65;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 
 
 }
@@ -2404,10 +2437,16 @@ display: flex;
 
 .review-form {
 
-  border: 1px solid rgba(0, 0, 0, 0.486);
-  background-color: #ffffff65;
-  margin-left: 500px;
-  margin-right: 500px;
+
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 
 
 }
@@ -2761,10 +2800,15 @@ display: flex;
 
 .review-form {
 
-  border: 1px solid rgba(0, 0, 0, 0.486);
-  background-color: #ffffff65;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 
 
 }
@@ -3114,11 +3158,16 @@ display: flex;
   }
   
   .review-form {
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   
-    border: 1px solid rgba(0, 0, 0, 0.486);
-    background-color: #ffffff65;
-    margin-left: 500px;
-    margin-right: 500px;
   
   
   }
@@ -3464,10 +3513,16 @@ display: flex;
   
   .review-form {
   
-    border: 1px solid rgba(0, 0, 0, 0.486);
-    background-color: #ffffff65;
-    margin-left: 500px;
-    margin-right: 500px;
+  
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
   
   
   }
@@ -3777,7 +3832,7 @@ display: flex;
   #homepage-introduction-subtitle {
   
     color: rgb(9, 10, 10);
-    margin-bottom: 160px;
+    margin-bottom: 1px;
     font-family: 'Pacifico', cursive;
     opacity: 100%;
     text-align: center;
@@ -3815,13 +3870,24 @@ display: flex;
   
   .review-form {
   
-    border: 1px solid rgba(0, 0, 0, 0.486);
-    background-color: #ffffff65;
-    margin-left: 500px;
-    margin-right: 500px;
+  
+
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
   
   
   }
+
+
+  
+  
   
   #send_review {
    
