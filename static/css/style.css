@@ -4025,13 +4025,14 @@ display: flex;
 
 
  /* macbook 13' */
-@media only screen and (device-width: 13.3in) and (device-height: 9.3in) {
 
+@media only screen and (min-width: 800px) and (min-height: 600px) and (orientation: landscape) {
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
         #homepage-introduction-subtitle {
   
           color: rgb(9, 10, 10);
-          margin-bottom: 60px;
+          margin-bottom: 135px;
           font-family: 'Pacifico', cursive;
           opacity: 100%;
           text-align: center;
@@ -4058,5 +4059,5 @@ display: flex;
         }
 
 
-
+      }
        }
