@@ -157,7 +157,7 @@
        <h2 id="third-title" style="margin-bottom: 50px; margin-top: 60px;">Sobre mim</h2> <br>
        <img src="static/img/fruits.jpeg" id="aboutme-pic">
             <span id="aboutme-text">
-            <p>Meu nome é Gabriela, eu tenho 27 anos e sou originalmente de Piracicaba-SP, Brasil. 
+            <p>Meu nome é Gabriela, eu tenho <span id="idade">[idade]</span> e sou originalmente de Piracicaba-SP, Brasil. 
               Moro nos Estados Unidos desde 2018, no estado do Arizona, com meu marido Jacob e meu gatinho idoso chamado Henry. 
               Sou formada em Biologia no Brasil e aqui nos EUA sou formada e certificada pela NASM (National Academy of Sports Medicine) 
               para ser Personal Trainer e Nutrition Coach nos Estados Unidos e Online em todo o mundo.
@@ -199,6 +199,19 @@
     }
 
 
+
+window.onload = function() {
+    var birthday = new Date('1995-12-25'); 
+    var today = new Date();
+    var age = today.getFullYear() - birthday.getFullYear();
+    var m = today.getMonth() - birthday.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
+        age--;
+    }
+
+    document.getElementById('idade').innerText = age;
+  };
 
    
 </script>
